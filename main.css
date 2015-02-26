@@ -1,0 +1,70 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+p, h2 {
+	color: gray;
+	font-family: sans-serif;
+}
+
+input {
+	height: 25%;
+	width: 100%;
+	font-size: 50px;
+	text-align: center;
+	border: none;
+	margin-bottom: 20px;
+	margin-top: 10%;
+	color: #5C97BF;
+}
+
+.ask {
+	border: none;
+	background-color: #5C97BF;
+	color: white;
+	font-size: 18px;
+	/*width: 15%;*/
+	text-align: center;
+	margin-right: auto;
+	padding: 10px 50px;
+	margin-bottom: 20px;
+}
+
+.center {
+	width: 70%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.currents {
+	width: 45%;
+	/*margin: auto;*/
+	text-align: right;
+	float: left;
+}
+
+p {
+	display: inline;
+	margin-bottom: 15px;
+}
+
+.status {
+	display: inline;
+	border: none;
+	margin-left: 5px;
+	color: white;
+	padding: 0px 5px 3px 5px;
+	/*border-radius: 100px;*/
+	border-radius: 50%;
+	margin-bottom: 15px;
+}
+
+.red {
+	background-color: #D64541;
+}
+
+.yellow {
+	background-color: #F9BF3B;
+}

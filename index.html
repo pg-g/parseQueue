@@ -5,7 +5,29 @@
 	<link href='main.css' rel='stylesheet'>
 </head>
 <body ng-controller='MainController'>
-	{{test}}
+	<!-- {{test}} -->
+	<form>
+		<input ng-model='question' placeholder='Ask Away'>
+		<button class='ask' ng-click='postData()'>Get Me an Answer</button>
+	</form>
+
+	<div clas"center">
+		<div class='currents'>
+			<h2>Questions</h2>
+			<div ng-repeat='question in questions | filter: {status: "red"}'>
+				<p>{{question.questionText}}</p>
+				<button class='status red' ng-click='changeStatus(question)'>v</button>
+			</div>
+		</div>
+
+		<div class='currents'>
+			<h2>In Progress</h2>
+			<div ng-repeat='question in questions | filter: {status: "yellow"}'>
+				<p>{{question.questionText}}</p>
+				<button class='status yellow' ng-click='deleteQ(question)'>x</button>
+			</div>
+		</div>
+	</div>
 
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
 	<script src='js/app.js'></script>
